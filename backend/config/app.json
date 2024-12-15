@@ -1,0 +1,322 @@
+{
+  "type": "system",
+  "name": "app",
+
+  "constants": {
+    "padding": 30,
+    "chart_input_max": 6,
+    "chart_input_current": 1,
+
+    "keymap": {
+      "options": [
+        "Classic",
+        "Race",
+        "Charts"
+      ]
+    }
+  },
+
+  "general": {
+    "title": "Application",
+    "type": "system",
+
+    "colorTheme": {
+      "value": "Green",
+      "label": "Color Theme",
+      "options": [
+        "Green",
+        "Red",
+        "Blue",
+        "White"
+      ]
+    },
+    "startPage": {
+      "value": "Dashboard",
+      "label": "Page on StartUp",
+      "options": [
+        "Dashboard",
+        "Carplay",
+        "Settings"
+      ]
+    },
+    "defaultDash": {
+      "value": "Classic",
+      "label": "Default Dashboard",
+      "options": [
+        "Classic",
+        "Race",
+        "Charts"
+      ]
+    },
+    "textSize": {
+      "value": "Default",
+      "label": "Text Size",
+      "options": [
+        "Small",
+        "Default",
+        "Large"
+      ]
+    },
+    "contentPadding": {
+      "value": 30,
+      "label": "Dashboard Padding"
+    }
+  },
+
+  "side_bars": {
+    "title": "Sidebar Settings",
+    "type": "system",
+
+    "dashBar": {
+      "value": true,
+      "label": "TopBar on CarPlay Page"
+    },
+    "topBarHeight": {
+      "value": 40,
+      "label": "TopBar Height"
+    },
+    "navBarHeight": {
+      "value": 65,
+      "label": "NavBar Height"
+    }
+  },
+
+  "dash_classic": {
+    "title": "Classic Dash",
+    "type": "data",
+
+    "gauge_1": {
+      "type": "can",
+      "value": "intake",
+      "label": "Gauge 1"
+    },
+    "gauge_2": {
+      "type": "can",
+      "value": "boost",
+      "label": "Gauge 2"
+    },
+    "gauge_3": {
+      "type": "can",
+      "value": "coolant",
+      "label": "Gauge 3"
+    },
+    "value_1": {
+      "type": "can",
+      "value": "lambda1",
+      "label": "Value 1"
+    },
+    "value_2": {
+      "type": "can",
+      "value": "lambda2",
+      "label": "Value 2"
+    },
+    "value_3": {
+      "type": "can",
+      "value": "voltage",
+      "label": "Value 3"
+    }
+  },
+
+  "dash_race": {
+    "title": "Race Dash",
+    "type": "data",
+
+    "progress_1": {
+      "type": "can",
+      "value": "rpm",
+      "label": "Progress Bar"
+    },
+    "progress_2": {
+      "type": "can",
+      "value": "boost",
+      "label": "Progress DataBox"
+    },
+    "value_1": {
+      "type": "can",
+      "value": "voltage",
+      "label": "Value 1"
+    },
+    "value_2": {
+      "type": "can",
+      "value": "intake",
+      "label": "Value 2"
+    },
+    "value_3": {
+      "type": "can",
+      "value": "coolant",
+      "label": "Value 3"
+    },
+    "value_4": {
+      "type": "can",
+      "value": "speed",
+      "label": "Value 4"
+    },
+    "value_5": {
+      "type": "can",
+      "value": "lambda1",
+      "label": "Value 5"
+    },
+    "value_6": {
+      "type": "can",
+      "value": "lambda2",
+      "label": "Value 6"
+    }
+  },
+
+  "dash_charts": {
+    "title": "Chart-Dash",
+    "type": "data",
+
+    "length": {
+      "type": null,
+      "value": 2500,
+      "label": "Length"
+    },
+    "value_1": {
+      "type": "adc",
+      "value": "pressure",
+      "label": "Value 1"
+    }
+  },
+
+  "dash_topbar":{
+    "title": "TopBar-Dash",
+    "type": "data",
+
+    "value_1": {
+      "type": "adc",
+      "value": "pressure",
+      "label": "Value 1"
+    },
+    "value_2": {
+      "type": "can",
+      "value": "intake",
+      "label": "Value 2"
+    },
+    "value_3": {
+      "type": "can",
+      "value": "coolant",
+      "label": "Value 3"
+    }
+  },
+
+  "mmi_bindings": {
+    "title": "MMI Keymap",
+    "type": "interface",
+
+    "left": {
+      "type": "lin",
+      "value": "ArrowLeft",
+      "label": "Left"
+    },
+    "right": {
+      "type": "lin",
+      "value": "ArrowRight",
+      "label": "Right"
+    },
+    "selectDown": {
+      "type": "lin",
+      "value": "Space",
+      "label": "Select"
+    },
+    "back": {
+      "type": "lin",
+      "value": "Backspace",
+      "label": "Back"
+    },
+    "down": {
+      "type": "lin",
+      "value": "ArrowDown",
+      "label": "Down"
+    },
+    "home": {
+      "type": "lin",
+      "value": "KeyH",
+      "label": "Home"
+    },
+    "play": {
+      "type": "lin",
+      "value": "KeyP",
+      "label": "Play"
+    },
+    "pause": {
+      "type": "lin",
+      "value": "KeyO",
+      "label": "Pause"
+    },
+    "next": {
+      "type": "lin",
+      "value": "KeyN",
+      "label": "Next"
+    },
+    "previous": {
+      "type": "lin",
+      "value": "KeyV",
+      "label": "Previous"
+    }
+  },
+
+  "app_bindings": {
+    "title": "Application Keymap",
+    "type": "interface",
+
+    "switch": {
+      "type": "lin",
+      "value": "ArrowUp",
+      "label": "Switch Pages"
+    },
+    "left": {
+      "type": "lin",
+      "value": "ArrowLeft",
+      "label": "Left"
+    },
+    "right": {
+      "type": "lin",
+      "value": "ArrowRight",
+      "label": "Right"
+    }
+  },
+
+  "comfort": {
+    "title": "Comfort",
+
+    "cruiseControl": {
+      "value": false,
+      "label": "Activate Cruise Control"
+    },
+    "openWindows": {
+      "value": false,
+      "label": "Open Windows"
+    },
+    "closeWindows": {
+      "value": false,
+      "label": "Close Windows"
+    }
+  },
+
+  "lights": {
+    "title": "Lights",
+
+    "headlights": {
+      "value": false,
+      "label": "Activate Headlights"
+    },
+    "sidelights": {
+      "value": false,
+      "label": "Activate Sidelights"
+    },
+    "foglights": {
+      "value": false,
+      "label": "Activate Foglights"
+    }
+  },
+
+  "dev": {
+    "title": "Dev",
+
+    "advancedSettings": {
+      "value": false,
+      "label": "Show Advanced Settings"
+    }
+  }
+}

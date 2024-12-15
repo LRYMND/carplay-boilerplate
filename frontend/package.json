@@ -1,0 +1,62 @@
+{
+  "name": "carplay-boilerplate",
+  "productName": "carplay-boilerplate",
+  "version": "1.0.0",
+  "private": false,
+  "author": {
+    "name": "Louis Raymond",
+    "email": "Louis.Raymond@live.at"
+  },
+  "type": "module",
+  "scripts": {
+    "vite": "vite",
+    "tsc": "tsc",
+    "build": "vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@types/color-convert": "^2.0.3",
+    "@types/node": "^16.18.40",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@webgpu/types": "^0.1.40",
+    "buffer": "^6.0.3",
+    "events": "^3.3.0",
+    "http-proxy-middleware": "^2.0.6",
+    "immer": "^10.0.3",
+    "node-carplay": "github:rhysmorgan134/node-CarPlay",
+    "pcm-player": "^0.0.16",
+    "pcm-ringbuf-player": "github:lrymnd/pcm-ringbuf-player",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-loader-spinner": "^5.3.4",
+    "react-simple-keyboard": "^3.7.34",
+    "react-spinners-kit": "^1.9.1",
+    "sass": "^1.69.5",
+    "socket.io-client": "^4.7.2",
+    "socketmost": "^2.0.6",
+    "stream-browserify": "^3.0.0",
+    "typescript": "^5.0.2",
+    "util": "^0.12.5",
+    "web-vitals": "^3.4.0",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "vite": "^4.5.0",
+    "vite-plugin-node-polyfills": "^0.22.0"
+  },
+  "resolutions": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
+  }
+}
